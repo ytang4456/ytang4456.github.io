@@ -1,0 +1,225 @@
+<!DOCTYPE html><html lang="en" data-theme="light"><head><meta charset="UTF-8"><meta http-equiv="X-UA-Compatible" content="IE=edge"><meta name="viewport" content="width=device-width, initial-scale=1.0,viewport-fit=cover"><title>FISHZ - FISHZ</title><meta name="author" content="JIN YU"><meta name="copyright" content="JIN YU"><meta name="format-detection" content="telephone=no"><meta name="theme-color" content="#ffffff"><meta name="description" content="Welcome to visit my blog">
+<meta property="og:type" content="website">
+<meta property="og:title" content="FISHZ">
+<meta property="og:url" content="https://ytang4456.github.io/page/2/index.html">
+<meta property="og:site_name" content="FISHZ">
+<meta property="og:description" content="Welcome to visit my blog">
+<meta property="og:locale" content="en_US">
+<meta property="og:image" content="https://ytang4456.github.io/img/butterfly-icon.png">
+<meta property="article:author" content="JIN YU">
+<meta name="twitter:card" content="summary">
+<meta name="twitter:image" content="https://ytang4456.github.io/img/butterfly-icon.png"><link rel="shortcut icon" href="/img/favicon.png"><link rel="canonical" href="https://ytang4456.github.io/page/2/index.html"><link rel="preconnect" href="//cdn.jsdelivr.net"/><link rel="preconnect" href="//busuanzi.ibruce.info"/><link rel="stylesheet" href="/css/index.css"><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free/css/all.min.css"><script>
+    (() => {
+      
+    const saveToLocal = {
+      set: (key, value, ttl) => {
+        if (!ttl) return
+        const expiry = Date.now() + ttl * 86400000
+        localStorage.setItem(key, JSON.stringify({ value, expiry }))
+      },
+      get: key => {
+        const itemStr = localStorage.getItem(key)
+        if (!itemStr) return undefined
+        const { value, expiry } = JSON.parse(itemStr)
+        if (Date.now() > expiry) {
+          localStorage.removeItem(key)
+          return undefined
+        }
+        return value
+      }
+    }
+
+    window.btf = {
+      saveToLocal,
+      getScript: (url, attr = {}) => new Promise((resolve, reject) => {
+        const script = document.createElement('script')
+        script.src = url
+        script.async = true
+        Object.entries(attr).forEach(([key, val]) => script.setAttribute(key, val))
+        script.onload = script.onreadystatechange = () => {
+          if (!script.readyState || /loaded|complete/.test(script.readyState)) resolve()
+        }
+        script.onerror = reject
+        document.head.appendChild(script)
+      }),
+      getCSS: (url, id) => new Promise((resolve, reject) => {
+        const link = document.createElement('link')
+        link.rel = 'stylesheet'
+        link.href = url
+        if (id) link.id = id
+        link.onload = link.onreadystatechange = () => {
+          if (!link.readyState || /loaded|complete/.test(link.readyState)) resolve()
+        }
+        link.onerror = reject
+        document.head.appendChild(link)
+      }),
+      addGlobalFn: (key, fn, name = false, parent = window) => {
+        if (!false && key.startsWith('pjax')) return
+        const globalFn = parent.globalFn || {}
+        globalFn[key] = globalFn[key] || {}
+        globalFn[key][name || Object.keys(globalFn[key]).length] = fn
+        parent.globalFn = globalFn
+      }
+    }
+  
+      
+      const activateDarkMode = () => {
+        document.documentElement.setAttribute('data-theme', 'dark')
+        if (document.querySelector('meta[name="theme-color"]') !== null) {
+          document.querySelector('meta[name="theme-color"]').setAttribute('content', '#0d0d0d')
+        }
+      }
+      const activateLightMode = () => {
+        document.documentElement.setAttribute('data-theme', 'light')
+        if (document.querySelector('meta[name="theme-color"]') !== null) {
+          document.querySelector('meta[name="theme-color"]').setAttribute('content', '#ffffff')
+        }
+      }
+
+      btf.activateDarkMode = activateDarkMode
+      btf.activateLightMode = activateLightMode
+
+      const theme = saveToLocal.get('theme')
+    
+          theme === 'dark' ? activateDarkMode() : theme === 'light' ? activateLightMode() : null
+        
+      
+      const asideStatus = saveToLocal.get('aside-status')
+      if (asideStatus !== undefined) {
+        document.documentElement.classList.toggle('hide-aside', asideStatus === 'hide')
+      }
+    
+      
+    const detectApple = () => {
+      if (/iPad|iPhone|iPod|Macintosh/.test(navigator.userAgent)) {
+        document.documentElement.classList.add('apple')
+      }
+    }
+    detectApple()
+  
+    })()
+  </script><script>const GLOBAL_CONFIG = {
+  root: '/',
+  algolia: undefined,
+  localSearch: undefined,
+  translate: undefined,
+  highlight: {"plugin":"highlight.js","highlightCopy":true,"highlightLang":true,"highlightHeightLimit":false,"highlightFullpage":false,"highlightMacStyle":false},
+  copy: {
+    success: 'Copy Successful',
+    error: 'Copy Failed',
+    noSupport: 'Browser Not Supported'
+  },
+  relativeDate: {
+    homepage: false,
+    post: false
+  },
+  runtime: '',
+  dateSuffix: {
+    just: 'Just now',
+    min: 'minutes ago',
+    hour: 'hours ago',
+    day: 'days ago',
+    month: 'months ago'
+  },
+  copyright: undefined,
+  lightbox: 'null',
+  Snackbar: undefined,
+  infinitegrid: {
+    js: 'https://cdn.jsdelivr.net/npm/@egjs/infinitegrid/dist/infinitegrid.min.js',
+    buttonText: 'Load More'
+  },
+  isPhotoFigcaption: false,
+  islazyloadPlugin: false,
+  isAnchor: false,
+  percent: {
+    toc: true,
+    rightside: false,
+  },
+  autoDarkmode: false
+}</script><script id="config-diff">var GLOBAL_CONFIG_SITE = {
+  title: 'FISHZ',
+  isHighlightShrink: false,
+  isToc: false,
+  pageType: 'home'
+}</script><link rel="stylesheet" href="/css/custom.css"><meta name="generator" content="Hexo 7.3.0"></head><body><div id="web_bg" style="background: [object Object];"></div><div class="page" id="body-wrap"><header class="full_page" id="page-header"><nav id="nav"><span id="blog-info"><a class="nav-site-title" href="/"><span class="site-name">FISHZ</span></a></span><div id="menus"></div></nav><div id="site-info"><h1 id="site-title">FISHZ</h1><div id="site-subtitle"><span id="subtitle"></span></div></div><div id="scroll-down"><i class="fas fa-angle-down scroll-down-effects"></i></div></header><main class="layout" id="content-inner"><div class="recent-posts nc" id="recent-posts"><div class="recent-post-items"><div class="recent-post-item"><div class="post_cover left"><a href="/2025/06/12/%E6%88%91%E7%9A%84%E7%88%B6%E6%AF%8D%E5%92%8C%E5%AE%B6%E4%BA%BA/" title="我的父母和家人"><img class="post-bg" src="https://pub-f4aff4df59e242ca820cf648fbf6cefc.r2.dev/family-0612/family-6787470_1280.jpg" onerror="this.onerror=null;this.src='/img/404.jpg'" alt="我的父母和家人"></a></div><div class="recent-post-info"><a class="article-title" href="/2025/06/12/%E6%88%91%E7%9A%84%E7%88%B6%E6%AF%8D%E5%92%8C%E5%AE%B6%E4%BA%BA/" title="我的父母和家人"><i class="fas fa-thumbtack sticky"></i>我的父母和家人</a><div class="article-meta-wrap"><span class="post-meta-date"><i class="far fa-calendar-alt"></i><span class="article-meta-label">Created</span><time datetime="2025-06-12T12:25:51.000Z" title="Created 2025-06-12 20:25:51">2025-06-12</time></span><span class="article-meta"><span class="article-meta-separator">|</span><i class="fas fa-inbox"></i><a class="article-meta__categories" href="/categories/%E7%94%9F%E6%B4%BB/">生活</a></span></div><div class="content"> [up主专用，视频内嵌代码贴在这]    .video-container {     position: relative;     width: 100%;     padding-top: 56.25%; /* 16:9 aspect ratio (height/width = 9/16 * 100%) */ }  .video-container iframe {     position: absolute;     top: 0;     left: 0;     width: 100%;     height: 100%; }  我的父母和家人 我和父亲，那几年每年我都要和父亲合照一次。 父亲出院后，我带着父母出玩，在温江公园留影。 </div></div></div><div class="recent-post-item"><div class="post_cover right"><a href="/2025/06/06/%E6%88%91%E7%9A%84%E5%AD%99%E5%A5%B3/" title="我的孙女"><img class="post-bg" src="https://pub-f4aff4df59e242ca820cf648fbf6cefc.r2.dev/family-0612/girl-life.jpg" onerror="this.onerror=null;this.src='/img/404.jpg'" alt="我的孙女"></a></div><div class="recent-post-info"><a class="article-title" href="/2025/06/06/%E6%88%91%E7%9A%84%E5%AD%99%E5%A5%B3/" title="我的孙女"><i class="fas fa-thumbtack sticky"></i>我的孙女</a><div class="article-meta-wrap"><span class="post-meta-date"><i class="far fa-calendar-alt"></i><span class="article-meta-label">Created</span><time datetime="2025-06-06T01:40:32.000Z" title="Created 2025-06-06 09:40:32">2025-06-06</time></span><span class="article-meta"><span class="article-meta-separator">|</span><i class="fas fa-inbox"></i><a class="article-meta__categories" href="/categories/%E7%94%9F%E6%B4%BB/">生活</a></span></div><div class="content"> [up主专用，视频内嵌代码贴在这]    .video-container {     position: relative;     width: 100%;     padding-top: 56.25%; /* 16:9 aspect ratio (height/width = 9/16 * 100%) */ }  .video-container iframe {     position: absolute;     top: 0;     left: 0;     width: 100%;     height: 100%; }  My granddaughter is growing up day and day                     </div></div></div><div class="recent-post-item"><div class="post_cover left"><a href="/2025/06/05/%E6%88%91%E7%9A%84%E6%97%85%E8%A1%8C%E7%85%A7%E7%89%87/" title="我在瑞典探亲旅行的照片"><img class="post-bg" src="https://pub-f4aff4df59e242ca820cf648fbf6cefc.r2.dev/field02.jpg" onerror="this.onerror=null;this.src='/img/404.jpg'" alt="我在瑞典探亲旅行的照片"></a></div><div class="recent-post-info"><a class="article-title" href="/2025/06/05/%E6%88%91%E7%9A%84%E6%97%85%E8%A1%8C%E7%85%A7%E7%89%87/" title="我在瑞典探亲旅行的照片"><i class="fas fa-thumbtack sticky"></i>我在瑞典探亲旅行的照片</a><div class="article-meta-wrap"><span class="post-meta-date"><i class="far fa-calendar-alt"></i><span class="article-meta-label">Created</span><time datetime="2025-06-05T00:27:34.000Z" title="Created 2025-06-05 08:27:34">2025-06-05</time></span><span class="article-meta"><span class="article-meta-separator">|</span><i class="fas fa-inbox"></i><a class="article-meta__categories" href="/categories/%E7%94%9F%E6%B4%BB/">生活</a></span></div><div class="content"> [up主专用，视频内嵌代码贴在这]    .video-container {     position: relative;     width: 100%;     padding-top: 56.25%; /* 16:9 aspect ratio (height/width = 9/16 * 100%) */ }  .video-container iframe {     position: absolute;     top: 0;     left: 0;     width: 100%;     height: 100%; }  我在瑞典探亲旅行的照片 我的家人合照，背景是儿子和媳妇的家 瑞典哥德堡的街景 瑞典哥德堡远郊景色 儿子家边上的散步道</div></div></div><div class="recent-post-item"><div class="post_cover right"><a href="/2025/07/09/%E5%B2%81%E6%9C%88%E9%9D%99%E5%A5%BD/" title="岁月静好"><img class="post-bg" src="https://cdn.jsdelivr.net/gh/ytang4456/hexoimg0603@master/2025/07/09/goodtimes.PNG" onerror="this.onerror=null;this.src='/img/404.jpg'" alt="岁月静好"></a></div><div class="recent-post-info"><a class="article-title" href="/2025/07/09/%E5%B2%81%E6%9C%88%E9%9D%99%E5%A5%BD/" title="岁月静好"><i class="fas fa-thumbtack sticky"></i>岁月静好</a><div class="article-meta-wrap"><span class="post-meta-date"><i class="far fa-calendar-alt"></i><span class="article-meta-label">Created</span><time datetime="2025-07-09T05:51:47.000Z" title="Created 2025-07-09 13:51:47">2025-07-09</time></span><span class="article-meta"><span class="article-meta-separator">|</span><i class="fas fa-inbox"></i><a class="article-meta__categories" href="/categories/%E9%9A%8F%E7%AC%94/">随笔</a></span></div><div class="content">Good TimesMany people believe that good times simply mean that misfortunes are happening elsewhere—to others, not to themselves.It is peace by omission, a quiet bought with distance and chance. As long as suffering stays out of sight, they call the world kind.When storms rage far away, they close their windows and claim it’s a sunny day.They mistake absence for immunity, believing that fortune is their birthright.But fate has no favorites. One day, what they chose to ignore may arrive...</div></div></div><div class="recent-post-item"><div class="post_cover left"><a href="/2025/06/30/%E6%96%87%E5%8C%96%E4%B8%8E%E6%96%87%E6%98%8E/" title="文化与文明"><img class="post-bg" src="https://cdn.jsdelivr.net/gh/ytang4456/hexoimg0603@master/2025/06/30/civilization2.jpg" onerror="this.onerror=null;this.src='/img/404.jpg'" alt="文化与文明"></a></div><div class="recent-post-info"><a class="article-title" href="/2025/06/30/%E6%96%87%E5%8C%96%E4%B8%8E%E6%96%87%E6%98%8E/" title="文化与文明"><i class="fas fa-thumbtack sticky"></i>文化与文明</a><div class="article-meta-wrap"><span class="post-meta-date"><i class="far fa-calendar-alt"></i><span class="article-meta-label">Created</span><time datetime="2025-06-30T10:04:14.000Z" title="Created 2025-06-30 18:04:14">2025-06-30</time></span><span class="article-meta"><span class="article-meta-separator">|</span><i class="fas fa-inbox"></i><a class="article-meta__categories" href="/categories/%E5%AD%A6%E4%B9%A0/">学习</a></span></div><div class="content">Culture And CivilizationWe are not a nation built on civilization, but one wrapped in ancient culture. There is a fundamental difference between culture and civilization. Culture is often a passive inheritance—secular, traditional, and unexamined. Civilization, on the other hand, demands active construction: it is based on belief, reason, the rule of law, and the moral limits of human behavior.Today, we still live by the rule of the jungle, where power defines right and winners take all....</div></div></div><div class="recent-post-item"><div class="post_cover right"><a href="/2025/06/29/%E7%91%9E%E5%85%B8%E6%96%AF%E5%BE%B7%E5%93%A5%E5%B0%94%E6%91%A9%E6%B8%B8%E8%AE%B0/" title="瑞典斯德哥尔摩游记"><img class="post-bg" src="https://cdn.jsdelivr.net/gh/ytang4456/hexoimg0603@master/2025/06/29/sdgem12.jpg" onerror="this.onerror=null;this.src='/img/404.jpg'" alt="瑞典斯德哥尔摩游记"></a></div><div class="recent-post-info"><a class="article-title" href="/2025/06/29/%E7%91%9E%E5%85%B8%E6%96%AF%E5%BE%B7%E5%93%A5%E5%B0%94%E6%91%A9%E6%B8%B8%E8%AE%B0/" title="瑞典斯德哥尔摩游记"><i class="fas fa-thumbtack sticky"></i>瑞典斯德哥尔摩游记</a><div class="article-meta-wrap"><span class="post-meta-date"><i class="far fa-calendar-alt"></i><span class="article-meta-label">Created</span><time datetime="2025-06-29T03:20:08.000Z" title="Created 2025-06-29 11:20:08">2025-06-29</time></span><span class="article-meta"><span class="article-meta-separator">|</span><i class="fas fa-inbox"></i><a class="article-meta__categories" href="/categories/%E6%B8%B8%E8%AE%B0/">游记</a></span></div><div class="content">瑞典斯德哥尔摩游记2018年我们一家人从荷兰出发，来到了瑞典斯德哥尔摩旅游。住在这个安静的地方。第一次到瑞典，感觉地铁很深，乘电梯似乎下了好几层才到达站台。说是为了防核攻击。你知道的是谁的核武器。出地铁站，刷卡，闸机门不开，结果旁边一个女士给我示意直接出闸机。瑞典人真友善。游览斯德哥尔摩最古老的街区——老城区（Gamla...</div></div></div><div class="recent-post-item"><div class="post_cover left"><a href="/2025/06/27/%E6%8C%AA%E5%A8%81%E5%A5%A5%E6%96%AF%E9%99%86%E6%B8%B8%E8%AE%B0/" title="挪威奥斯陆游记"><img class="post-bg" src="https://cdn.jsdelivr.net/gh/ytang4456/hexoimg0603@master/2025/06/25/oslo-1091011_1280.jpg" onerror="this.onerror=null;this.src='/img/404.jpg'" alt="挪威奥斯陆游记"></a></div><div class="recent-post-info"><a class="article-title" href="/2025/06/27/%E6%8C%AA%E5%A8%81%E5%A5%A5%E6%96%AF%E9%99%86%E6%B8%B8%E8%AE%B0/" title="挪威奥斯陆游记"><i class="fas fa-thumbtack sticky"></i>挪威奥斯陆游记</a><div class="article-meta-wrap"><span class="post-meta-date"><i class="far fa-calendar-alt"></i><span class="article-meta-label">Created</span><time datetime="2025-06-27T03:00:25.000Z" title="Created 2025-06-27 11:00:25">2025-06-27</time></span><span class="article-meta"><span class="article-meta-separator">|</span><i class="fas fa-inbox"></i><a class="article-meta__categories" href="/categories/%E6%B8%B8%E8%AE%B0/">游记</a></span></div><div class="content">奥斯陆：安静世界里的深呼吸一座城市的节奏，不靠喧嚣，而靠它自己的温度。2024年的深秋我们从瑞典哥德堡乘坐大巴车，经过三个小时的路程，我们到达了挪威奥斯陆。🏛 一、诺贝尔和平奖博物馆：沉默的光芒奥斯陆的这座小小博物馆，没有金碧辉煌，却让我久久难忘。那些获得和平奖的名字静静陈列，那些照片、文字、影像像在低语。最让我感动的是一个展区里写着：“和平不是状态，是一种选择。”我站在玻璃展柜前，心底一阵发烫——在这个嘈杂的世界里，还有人一直在守护人类的良知。挪威皇宫，给我的印象，简朴庄严。皇宫边上的执勤警察，面容是那么的特别。奥斯陆的音乐厅，一座现代化的建筑。在奥斯陆的城堡处留言纪念。 🚤 二、峡湾的风，北欧的诗坐上游船，驶入奥斯陆峡湾，水面像镜子一样平静。船两边是起伏的山丘与点缀其中的彩色木屋，像走进一幅静物画。风不大，却让人忍不住深呼吸。那种宁静，是我在国内很少感受到的。没有导游的讲解，我反而觉得，这一段沉默的旅程，是一种纯粹的幸福。乘船游览峡湾。峡湾景色太美。等待乘船的人们。 🌇...</div></div></div><div class="recent-post-item"><div class="post_cover right"><a href="/2025/06/21/%E6%B3%95%E5%9B%BD%E5%B7%B4%E9%BB%8E%E6%B8%B8%E8%AE%B0/" title="法国巴黎游记"><img class="post-bg" src="https://cdn.jsdelivr.net/gh/ytang4456/hexoimg0603@master/%7B2025%7D/%7B06%7D/%7B21%7D/tower-1950742_1280.jpg" onerror="this.onerror=null;this.src='/img/404.jpg'" alt="法国巴黎游记"></a></div><div class="recent-post-info"><a class="article-title" href="/2025/06/21/%E6%B3%95%E5%9B%BD%E5%B7%B4%E9%BB%8E%E6%B8%B8%E8%AE%B0/" title="法国巴黎游记"><i class="fas fa-thumbtack sticky"></i>法国巴黎游记</a><div class="article-meta-wrap"><span class="post-meta-date"><i class="far fa-calendar-alt"></i><span class="article-meta-label">Created</span><time datetime="2025-06-21T12:18:17.000Z" title="Created 2025-06-21 20:18:17">2025-06-21</time></span><span class="article-meta"><span class="article-meta-separator">|</span><i class="fas fa-inbox"></i><a class="article-meta__categories" href="/categories/%E6%B8%B8%E8%AE%B0/">游记</a></span></div><div class="content">法国巴黎游记2013 年 5 月 29 日，我们一家三人一大早从巴塞罗那的公寓退房，直奔机场，前往巴黎。退房时直接将房牌投入一个箱子里手续就完成了，因为那时工作人员没有上班。在第 2 航站楼经过严格的安检，坐上了飞往巴黎的飞机。经过一个多小时飞行飞机降落在巴黎戴高乐机场。法国首都巴黎是世界上十大名城之一。它位于法国北部巴黎盆地的中央，城跨塞纳河两岸。面积达 12000 平方公里，人口约 1000 万，几乎占全国人口的五分之一。是法国最大的城市，也是世界人口最多的大都市之一。巴黎建都已有 1400 多年的历史，而城市自身的历史已有 2000 多年。机场出站口很简单但是出站口外则显得有点复杂。儿子不得不到问讯处咨询到市区的走法。结果购火车票，上车到巴黎火车北站。巴黎火车北站下车后给人的感觉是如何出站，因为车站大，又是第一次来。只能顺着指示牌走。终于到了出站口，坐上出租车，有意思的是出租车的前排不坐人，也就是说，出租车最多只能坐三人。司机看了地址还要看地图，然后才将我们载到饭店。放下行李，我们向地铁站出发。在地铁站发现有 5...</div></div></div><div class="recent-post-item"><div class="post_cover left"><a href="/2025/06/21/%E5%B7%B4%E8%90%A8%E7%BD%97%E7%BA%B3%E6%B8%B8%E8%AE%B0/" title="西班牙巴塞罗那游记"><img class="post-bg" src="https://cdn.jsdelivr.net/gh/ytang4456/hexoimg0603@master/%7B2025%7D/%7B06%7D/%7B21%7D/barcelona-3798988_1280.jpg" onerror="this.onerror=null;this.src='/img/404.jpg'" alt="西班牙巴塞罗那游记"></a></div><div class="recent-post-info"><a class="article-title" href="/2025/06/21/%E5%B7%B4%E8%90%A8%E7%BD%97%E7%BA%B3%E6%B8%B8%E8%AE%B0/" title="西班牙巴塞罗那游记"><i class="fas fa-thumbtack sticky"></i>西班牙巴塞罗那游记</a><div class="article-meta-wrap"><span class="post-meta-date"><i class="far fa-calendar-alt"></i><span class="article-meta-label">Created</span><time datetime="2025-06-21T01:33:24.000Z" title="Created 2025-06-21 09:33:24">2025-06-21</time></span><span class="article-meta"><span class="article-meta-separator">|</span><i class="fas fa-inbox"></i><a class="article-meta__categories" href="/categories/%E6%B8%B8%E8%AE%B0/">游记</a></span></div><div class="content">巴塞罗那游记2013年一家人从荷兰出发到巴塞罗那旅游，今天把当年的游记重新拿出来，发布在我的博客上，以此来分享。 </div></div></div><div class="recent-post-item"><div class="post_cover right"><a href="/2025/06/05/%E6%88%91%E5%96%9C%E6%AC%A2%E7%9A%84%E7%9F%AD%E8%AF%AD/" title="我喜欢的短语"><img class="post-bg" src="https://pub-f4aff4df59e242ca820cf648fbf6cefc.r2.dev/beach-blue.jpg" onerror="this.onerror=null;this.src='/img/404.jpg'" alt="我喜欢的短语"></a></div><div class="recent-post-info"><a class="article-title" href="/2025/06/05/%E6%88%91%E5%96%9C%E6%AC%A2%E7%9A%84%E7%9F%AD%E8%AF%AD/" title="我喜欢的短语"><i class="fas fa-thumbtack sticky"></i>我喜欢的短语</a><div class="article-meta-wrap"><span class="post-meta-date"><i class="far fa-calendar-alt"></i><span class="article-meta-label">Created</span><time datetime="2025-06-04T22:13:50.000Z" title="Created 2025-06-05 06:13:50">2025-06-05</time></span><span class="article-meta"><span class="article-meta-separator">|</span><i class="fas fa-inbox"></i><a class="article-meta__categories" href="/categories/%E5%AD%A6%E4%B9%A0/">学习</a></span></div><div class="content"> [up主专用，视频内嵌代码贴在这]    .video-container {     position: relative;     width: 100%;     padding-top: 56.25%; /* 16:9 aspect ratio (height/width = 9/16 * 100%) */ }  .video-container iframe {     position: absolute;     top: 0;     left: 0;     width: 100%;     height: 100%; }  我喜欢的短语怀疑一种东西，要比相信一种东西难得多。因为怀疑，需要更多的知识储备，独见和勇气。​​认为吃饭比说话重要的地方。最后无一列外，都有饥荒。甚至食不果腹。认为说话比其它什么都重要的地方，最后无一例外。都蓬勃发展，直至造福旁人。 </div></div></div></div><nav id="pagination"><div class="pagination"><a class="extend prev" rel="prev" href="/"><i class="fas fa-chevron-left fa-fw"></i></a><a class="page-number" href="/">1</a><span class="page-number current">2</span><a class="page-number" href="/page/3/#content-inner">3</a><a class="extend next" rel="next" href="/page/3/#content-inner"><i class="fas fa-chevron-right fa-fw"></i></a></div></nav></div><div class="aside-content" id="aside-content"><div class="card-widget card-info text-center"><div class="avatar-img"><img src="/img/butterfly-icon.png" onerror="this.onerror=null;this.src='/img/friend_404.gif'" alt="avatar"/></div><div class="author-info-name">JIN YU</div><div class="author-info-description">Welcome to visit my blog</div><div class="site-data"><a href="/archives/"><div class="headline">Articles</div><div class="length-num">28</div></a><a href="/tags/"><div class="headline">Tags</div><div class="length-num">11</div></a><a href="/categories/"><div class="headline">Categories</div><div class="length-num">4</div></a></div><a id="card-info-btn" target="_blank" rel="noopener" href="https://github.com/xxxxxx"><i class="fab fa-github"></i><span>Follow Me</span></a></div><div class="card-widget card-announcement"><div class="item-headline"><i class="fas fa-bullhorn fa-shake"></i><span>Announcement</span></div><div class="announcement_content">This is my Blog</div></div><div class="sticky_layout"><div class="card-widget card-recent-post"><div class="item-headline"><i class="fas fa-history"></i><span>Recent Posts</span></div><div class="aside-list"><div class="aside-list-item"><a class="thumbnail" href="/2025/07/09/%E5%B2%81%E6%9C%88%E9%9D%99%E5%A5%BD/" title="岁月静好"><img src="https://cdn.jsdelivr.net/gh/ytang4456/hexoimg0603@master/2025/07/09/goodtimes.PNG" onerror="this.onerror=null;this.src='/img/404.jpg'" alt="岁月静好"/></a><div class="content"><a class="title" href="/2025/07/09/%E5%B2%81%E6%9C%88%E9%9D%99%E5%A5%BD/" title="岁月静好">岁月静好</a><time datetime="2025-07-09T05:51:47.000Z" title="Created 2025-07-09 13:51:47">2025-07-09</time></div></div><div class="aside-list-item"><a class="thumbnail" href="/2025/07/03/%E8%B0%8E%E8%A8%80%E4%B8%8E%E7%9C%9F%E7%90%86/" title="谎言与真理"><img src="https://cdn.jsdelivr.net/gh/ytang4456/hexoimg0603@master/2025/07/04/lies_truth.png" onerror="this.onerror=null;this.src='/img/404.jpg'" alt="谎言与真理"/></a><div class="content"><a class="title" href="/2025/07/03/%E8%B0%8E%E8%A8%80%E4%B8%8E%E7%9C%9F%E7%90%86/" title="谎言与真理">谎言与真理</a><time datetime="2025-07-03T13:02:23.000Z" title="Created 2025-07-03 21:02:23">2025-07-03</time></div></div><div class="aside-list-item"><a class="thumbnail" href="/2025/07/03/%E9%9D%A2%E5%8C%85%E4%B8%8E%E9%A6%92%E5%A4%B4/" title="面包与馒头"><img src="https://cdn.jsdelivr.net/gh/ytang4456/hexoimg0603@master/2025/07/04/kitchen-7855426_1280.jpg" onerror="this.onerror=null;this.src='/img/404.jpg'" alt="面包与馒头"/></a><div class="content"><a class="title" href="/2025/07/03/%E9%9D%A2%E5%8C%85%E4%B8%8E%E9%A6%92%E5%A4%B4/" title="面包与馒头">面包与馒头</a><time datetime="2025-07-03T12:49:44.000Z" title="Created 2025-07-03 20:49:44">2025-07-03</time></div></div><div class="aside-list-item"><a class="thumbnail" href="/2025/06/30/%E6%96%87%E5%8C%96%E4%B8%8E%E6%96%87%E6%98%8E/" title="文化与文明"><img src="https://cdn.jsdelivr.net/gh/ytang4456/hexoimg0603@master/2025/06/30/civilization2.jpg" onerror="this.onerror=null;this.src='/img/404.jpg'" alt="文化与文明"/></a><div class="content"><a class="title" href="/2025/06/30/%E6%96%87%E5%8C%96%E4%B8%8E%E6%96%87%E6%98%8E/" title="文化与文明">文化与文明</a><time datetime="2025-06-30T10:04:14.000Z" title="Created 2025-06-30 18:04:14">2025-06-30</time></div></div><div class="aside-list-item"><a class="thumbnail" href="/2025/06/29/%E4%B8%80%E4%B8%AA%E7%9C%9F%E5%AE%9E%E7%9A%84%E6%95%85%E4%BA%8B/" title="一个真实的故事"><img src="https://cdn.jsdelivr.net/gh/ytang4456/hexoimg0603@master/2025/06/29/father-6813857_1280.jpg" onerror="this.onerror=null;this.src='/img/404.jpg'" alt="一个真实的故事"/></a><div class="content"><a class="title" href="/2025/06/29/%E4%B8%80%E4%B8%AA%E7%9C%9F%E5%AE%9E%E7%9A%84%E6%95%85%E4%BA%8B/" title="一个真实的故事">一个真实的故事</a><time datetime="2025-06-29T04:17:02.000Z" title="Created 2025-06-29 12:17:02">2025-06-29</time></div></div></div></div><div class="card-widget card-categories"><div class="item-headline">
+            <i class="fas fa-folder-open"></i>
+            <span>Categories</span>
+            
+          </div>
+          <ul class="card-category-list" id="aside-cat-list">
+            <li class="card-category-list-item "><a class="card-category-list-link" href="/categories/%E5%AD%A6%E4%B9%A0/"><span class="card-category-list-name">学习</span><span class="card-category-list-count">5</span></a></li><li class="card-category-list-item "><a class="card-category-list-link" href="/categories/%E6%B8%B8%E8%AE%B0/"><span class="card-category-list-name">游记</span><span class="card-category-list-count">7</span></a></li><li class="card-category-list-item "><a class="card-category-list-link" href="/categories/%E7%94%9F%E6%B4%BB/"><span class="card-category-list-name">生活</span><span class="card-category-list-count">4</span></a></li><li class="card-category-list-item "><a class="card-category-list-link" href="/categories/%E9%9A%8F%E7%AC%94/"><span class="card-category-list-name">随笔</span><span class="card-category-list-count">9</span></a></li>
+          </ul></div><div class="card-widget card-tags"><div class="item-headline"><i class="fas fa-tags"></i><span>Tags</span></div><div class="card-tag-cloud"><a href="/tags/%E6%80%9D%E8%80%83%EF%BC%8C%E7%AC%94%E8%AE%B0/" style="font-size: 1.1em; color: #999">思考，笔记</a> <a href="/tags/%E6%91%84%E5%BD%B1%EF%BC%8C%E9%9B%86%E5%B8%82/" style="font-size: 1.23em; color: #999ea6">摄影，集市</a> <a href="/tags/%E6%91%84%E5%BD%B1%EF%BC%8C%E5%8E%86%E5%8F%B2/" style="font-size: 1.1em; color: #999">摄影，历史</a> <a href="/tags/%E6%83%86%E6%80%85%EF%BC%8C%E6%97%A0%E5%8A%A9/" style="font-size: 1.1em; color: #999">惆怅，无助</a> <a href="/tags/%E5%BF%83%E6%83%85/" style="font-size: 1.1em; color: #999">心情</a> <a href="/tags/%E6%91%84%E5%BD%B1/" style="font-size: 1.1em; color: #999">摄影</a> <a href="/tags/%E6%97%85%E8%A1%8C/" style="font-size: 1.37em; color: #99a4b2">旅行</a> <a href="/tags/%E6%84%9F%E6%85%A8/" style="font-size: 1.1em; color: #999">感慨</a> <a href="/tags/%E5%9B%A2%E8%81%9A/" style="font-size: 1.1em; color: #999">团聚</a> <a href="/tags/%E5%8D%9A%E7%89%A9%E9%A6%86/" style="font-size: 1.5em; color: #99a9bf">博物馆</a> <a href="/tags/%E8%AF%BB%E4%B9%A6/" style="font-size: 1.1em; color: #999">读书</a></div></div><div class="card-widget card-archives">
+    <div class="item-headline">
+      <i class="fas fa-archive"></i>
+      <span>Archives</span>
+      
+    </div>
+  
+    <ul class="card-archive-list">
+      
+        <li class="card-archive-list-item">
+          <a class="card-archive-list-link" href="/archives/2025/07/">
+            <span class="card-archive-list-date">
+              July 2025
+            </span>
+            <span class="card-archive-list-count">3</span>
+          </a>
+        </li>
+      
+        <li class="card-archive-list-item">
+          <a class="card-archive-list-link" href="/archives/2025/06/">
+            <span class="card-archive-list-date">
+              June 2025
+            </span>
+            <span class="card-archive-list-count">25</span>
+          </a>
+        </li>
+      
+    </ul>
+  </div><div class="card-widget card-webinfo"><div class="item-headline"><i class="fas fa-chart-line"></i><span>Website Info</span></div><div class="webinfo"><div class="webinfo-item"><div class="item-name">Article Count :</div><div class="item-count">28</div></div><div class="webinfo-item"><div class="item-name">Unique Visitors :</div><div class="item-count" id="busuanzi_value_site_uv"><i class="fa-solid fa-spinner fa-spin"></i></div></div><div class="webinfo-item"><div class="item-name">Page Views :</div><div class="item-count" id="busuanzi_value_site_pv"><i class="fa-solid fa-spinner fa-spin"></i></div></div><div class="webinfo-item"><div class="item-name">Last Update :</div><div class="item-count" id="last-push-date" data-lastPushDate="2025-07-09T06:52:03.752Z"><i class="fa-solid fa-spinner fa-spin"></i></div></div></div></div></div></div></main><footer id="footer"><div id="footer-wrap"><div class="copyright">&copy;2019 - 2025 By JIN YU</div><div class="framework-info"><span>Framework </span><a target="_blank" rel="noopener" href="https://hexo.io">Hexo 7.3.0</a><span class="footer-separator">|</span><span>Theme </span><a target="_blank" rel="noopener" href="https://github.com/jerryc127/hexo-theme-butterfly">Butterfly 5.3.5</a></div></div></footer></div><div id="rightside"><div id="rightside-config-hide"><button id="darkmode" type="button" title="Toggle Between Light and Dark Mode"><i class="fas fa-adjust"></i></button><button id="hide-aside-btn" type="button" title="Toggle Between Single-column and Double-column"><i class="fas fa-arrows-alt-h"></i></button></div><div id="rightside-config-show"><button id="rightside-config" type="button" title="Settings"><i class="fas fa-cog fa-spin"></i></button><button id="go-up" type="button" title="Back to Top"><span class="scroll-percent"></span><i class="fas fa-arrow-up"></i></button></div></div><div><script src="/js/utils.js"></script><script src="/js/main.js"></script><div class="js-pjax"><script>window.typedJSFn = {
+  init: str => {
+    window.typed = new Typed('#subtitle', Object.assign({
+      strings: str,
+      startDelay: 300,
+      typeSpeed: 150,
+      loop: true,
+      backSpeed: 50,
+    }, null))
+  },
+  run: subtitleType => {
+    if (true) {
+      if (typeof Typed === 'function') {
+        subtitleType()
+      } else {
+        btf.getScript('https://cdn.jsdelivr.net/npm/typed.js/dist/typed.umd.min.js').then(subtitleType)
+      }
+    } else {
+      subtitleType()
+    }
+  },
+  processSubtitle: (content, extraContents = []) => {
+    if (true) {
+      const sub = "思绪万千".slice()
+
+      if (extraContents.length > 0) {
+        sub.unshift(...extraContents)
+      }
+
+      if (typeof content === 'string') {
+        sub.unshift(content)
+      } else if (Array.isArray(content)) {
+        sub.unshift(...content)
+      }
+
+      sub.length > 0 && typedJSFn.init(sub)
+    } else {
+      document.getElementById('subtitle').textContent = typeof content === 'string' ? content :
+        (Array.isArray(content) && content.length > 0 ? content[0] : '')
+    }
+  }
+}
+btf.addGlobalFn('pjaxSendOnce', () => { typed.destroy() }, 'typedDestroy')
+</script><script>function subtitleType () {
+  typedJSFn.processSubtitle("思绪万千")
+}
+typedJSFn.run(subtitleType)</script></div><script async data-pjax src="//busuanzi.ibruce.info/busuanzi/2.3/busuanzi.pure.mini.js"></script></div></body></html>
